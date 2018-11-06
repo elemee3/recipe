@@ -1,0 +1,62 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.Recipe {
+    border: 1px solid #888888;
+    width: 200px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 5px 5px #888888;
+    border-radius: 5px;
+}
+
+.Recipe::before {
+    content: "Instructions to prepare the recipe.";
+    opacity: 0;
+}
+
+.Recipe:hover::before {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+}
+
+.Recipe:hover {
+    opacity: .5;
+    transition: opacity .5s ease-in;
+}
+
+/* .Recipe:hover {
+    animation: App-logo-spin infinite 10s linear;
+    opacity: .5;
+    transition: opacity .5s ease-in;
+} */
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.Body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Body a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
