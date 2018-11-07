@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../App.css';
 
 class RecipeCard extends Component {
 
@@ -15,8 +15,6 @@ class RecipeCard extends Component {
                 <div className="RecipeContent">
                     <h4>{recipe.name}</h4>
                     <img src={recipe.image} />
-                    <br/>
-                    {contents.join(', ')}
                     <br/>
                     <br/>
                 </div>
